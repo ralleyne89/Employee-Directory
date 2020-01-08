@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "./container.css"
-import showList from "./showlist"
 
 class Container extends Component {
     
@@ -11,6 +10,16 @@ class Container extends Component {
         <hr />
     <div className="employee-info"></div>
       </div>)
+    }
+
+    addEmployee(){
+        console.log("it works!")
+        return(<div></div>)
+    }
+
+    removeEmployee(){
+        console.log("it works!")
+        return(<div></div>)
     }
 
     render() {
@@ -27,10 +36,10 @@ class Container extends Component {
             <a className="btn btn-primary btn-lg" href="#" role="button" onClick={this.showList} id="view">
               View Employees
             </a>
-            <a className="btn btn-success btn-lg" href="#" role="button">
+            <a className="btn btn-success btn-lg" href="#" role="button" onClick={this.addEmployee} id="add">
               Add Employee
             </a>
-            <a className="btn btn-danger btn-lg" href="#" role="button">
+            <a className="btn btn-danger btn-lg" href="#" role="button" onClick={this.removeEmployee} id="remove">
               Remove Employee
             </a>
           </div>
