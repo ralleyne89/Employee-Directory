@@ -1,3 +1,8 @@
+body {
+    font-family: Source sans pro;
+    background-color: lightgrey;
+}
+
 .jumbotron {
     max-width: 80%;
     margin: 20px auto;

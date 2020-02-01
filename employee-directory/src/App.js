@@ -1,12 +1,27 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import Container from './components/container';
+import Jumbotron from './components/Jumbotron';
+import SearchBar from './components/SearchBar';
+import SearchButton from './components/SearchButton';
+import NavBar from './components/NavBar';
+import Table from './components/Table'
+import Row from './components/TableRow'
+
 
 
 function App() {
   return (
-    <Container/>
+    <div>
+      <NavBar/>
+      <Jumbotron/>
+      <SearchBar/>
+      <Table>
+      <Row/>
+
+      </Table>
+
+    </div>
+
     );
   }
   
