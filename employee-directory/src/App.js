@@ -14,11 +14,7 @@ function App() {
     <div>
       <NavBar/>
       <Jumbotron/>
-      <SearchBar/>
-      <Table>
-      <Row/>
-
-      </Table>
+      <Table/>
 
     </div>
 
