@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import TableRow from "../TableRow";
 import SearchBar from "../SearchBar";
 import api from "../../utils/api";
+import "./style.css"
 
 
 
@@ -47,19 +48,16 @@ class Table extends Component {
     ));
 
     return (
-      <div className="Main">
+      <div className="tablecontainer">
         <SearchBar
           search={this.state.search}
           handleInputChange={this.handleInputChange}
         />
         <table className="table">
-          <thead className="">
+          <thead>
             <tr>
-              <th scope="col">Image</th>
-              <th scope="col">Name</th>
-              <th scope="col">Phone</th>
-              <th scope="col">Email</th>
-              <th scope="col">DOB</th>
+              <th scope="col">Team List</th>
+              
             </tr>
           </thead>
           <tbody>{employeesList}</tbody>

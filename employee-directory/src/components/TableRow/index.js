@@ -8,7 +8,7 @@ function TableRow(props) {
           <img src={props.imageURL} alt="" />
         </td>
         <td>{props.name}</td>
-
+        <td>{props.phone}</td>
         <td>{props.email}</td>
       </tr>
     </div>

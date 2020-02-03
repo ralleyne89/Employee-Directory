@@ -35,14 +35,14 @@ function SearchBar(props) {
             value={props.selectRole}
             onChange={props.handleRoleChange}
             name="roleselect"
-            placeholder="Select a Role"
           >
+            <option>Select a Role</option>
             <option>Manager</option>
             <option>Engineer</option>
             <option>Intern</option>
           </select>
         </div>
-        <div className="col-sm">
+        <div className="" style={{display: 'block', margin: '10px auto'}}>
           <input
             className="btn"
             type="submit"
